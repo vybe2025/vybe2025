@@ -21,6 +21,9 @@ document.addEventListener("DOMContentLoaded", function() {
     console.error("Erro ao inicializar Firebase");
   }
   
-  // Inicializa Firestore
-  const db = firebase.firestore();
+  // Inicializa o Firestore
+const db = firebase.firestore();
+
+// Define como variável global
+window.db = db;
 });
